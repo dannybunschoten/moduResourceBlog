@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import { type TailwindConfig } from "tailwindcss/tailwind-config";
 
 export default {
   content: [
@@ -72,4 +72,4 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+} satisfies TailwindConfig;
