@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface CarouselProps {
@@ -8,6 +8,9 @@ interface CarouselProps {
 
 export function Carousel({ images, captions = [] }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => {
+    setCurrentIndex(0);
+  }, [images]);
 
   const goToPrevious = () => {
     if (currentIndex > 0) {
