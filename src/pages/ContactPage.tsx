@@ -1,25 +1,29 @@
-import { Button } from "../components/ui/button"
-import { Input } from "../components/ui/input"
-import { Textarea } from "../components/ui/textarea"
-import { Checkbox } from "../components/ui/checkbox"
-import { MapPin, Phone } from "lucide-react"
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Textarea } from "../components/ui/textarea";
+import { Checkbox } from "../components/ui/checkbox";
+import { MapPin, Phone } from "lucide-react";
 
 export default function ContactPage() {
   return (
     <section className="py-12 md:py-20">
-      <div className="container-custom">
+      <div className="container mx-auto px-4">
         <div className="mb-12 max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
           <p className="mb-8">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores ea rebum Stet clita.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos accusam et justo duo dolores ea
+            rebum Stet clita.
           </p>
           <ul className="space-y-4">
             <li className="flex items-center">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 mr-4">
                 <MapPin className="h-4 w-4" />
               </div>
-              <p className="text-gray-900">Address: Lorem 142 Str., 2352, Ipsum, State, USA</p>
+              <p className="text-gray-900">
+                Address: Lorem 142 Str., 2352, Ipsum, State, USA
+              </p>
             </li>
             <li className="flex items-center">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 mr-4">
@@ -58,12 +62,13 @@ export default function ContactPage() {
           <div className="h-[400px] lg:h-auto rounded-lg overflow-hidden bg-gray-200">
             {/* Map would go here - using a placeholder for now */}
             <div className="w-full h-full flex items-center justify-center bg-gray-200">
-              <p className="text-gray-500">Google Map would be displayed here</p>
+              <p className="text-gray-500">
+                Google Map would be displayed here
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
-

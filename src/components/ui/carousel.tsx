@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface CarouselProps {
   images: string[];
@@ -32,19 +32,19 @@ export function Carousel({ images, captions = [] }: CarouselProps) {
   const isLastImage = currentIndex === images.length - 1;
 
   return (
-    <div className="relative w-full max-w-3xl rounded-lg overflow-hidden">
+    <div className="relative w-full rounded-lg overflow-hidden">
       {/* Fixed aspect ratio container */}
       <div className="aspect-[4/3] w-full">
-        <img 
-          src={images[currentIndex]} 
-          alt={`Image ${currentIndex + 1}`} 
-          className="w-full h-full object-contain bg-gray-100"
+        <img
+          src={images[currentIndex]}
+          alt={`Image ${currentIndex + 1}`}
+          className="w-full h-full object-contain bg-gray-100 rounded-lg"
         />
-        
+
         {/* Caption display - overlay at the bottom with transparent background */}
         {captions && captions[currentIndex] && (
-          <div className="absolute bottom-0 inset-x-0 bg-black bg-opacity-50 text-white p-4">
-            <p className="text-sm">{captions[currentIndex]}</p>
+          <div className="absolute bottom-0 inset-x-0 bg-black/50 text-white">
+            <p className="text-sm m-4">{captions[currentIndex]}</p>
           </div>
         )}
       </div>
@@ -59,7 +59,7 @@ export function Carousel({ images, captions = [] }: CarouselProps) {
           <ChevronLeft size={20} />
         </button>
       )}
-      
+
       {/* Only show next button if not on the last image */}
       {!isLastImage && (
         <button
