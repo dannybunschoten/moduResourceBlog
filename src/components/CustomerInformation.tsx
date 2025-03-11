@@ -46,7 +46,7 @@ export default function CustomerInformation() {
     },
     {
       label: "Rig type",
-      value: "Lang rig",
+      value: "Land rig",
       icon: <HardHat className="h-5 w-5" />,
     },
     {
