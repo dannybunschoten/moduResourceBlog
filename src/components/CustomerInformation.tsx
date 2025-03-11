@@ -56,7 +56,7 @@ export default function CustomerInformation() {
     },
     {
       label: "Team",
-      value: "Bart Musters & Jelle Swanenberg",
+      value: "Bart Musters, Jelle Swanenberg & Peter Wilke",
       icon: <Users className="h-5 w-5" />,
     },
   ];
