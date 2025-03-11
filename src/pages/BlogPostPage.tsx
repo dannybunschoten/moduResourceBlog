@@ -114,19 +114,16 @@ export default function BlogPostPage() {
             </li>
           </ul>
 
-          <div className="prose prose-lg dark:prose-invert prose-headings:text-moduspec-blue max-w-[100%]">
+          <div className="prose prose-lg dark:prose-invert prose-headings:text-moduspec-blue max-w-[100%] prose-img:m-0">
             {/* Use our structured BlogContent component */}
             {currentPost.sections && (
               <BlogContent sections={currentPost.sections} />
             )}
           </div>
 
-          {/* Add Attachments section with all images from the document */}
           {allImages.length > 0 && (
-            <div className="mt-10 max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold mt-8 mb-4 text-moduspec-blue">
-                Attachments
-              </h2>
+            <div className="mt-10 max-w-3xl mx-auto prose prose-lg prose-img:m-0">
+              <h2 className="text-moduspec-blue mb-0">Attachments</h2>
               <Carousel
                 images={allImages.map((img) => img.url)}
                 captions={allImages.map((img) => img.caption)}
