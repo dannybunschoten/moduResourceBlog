@@ -67,7 +67,7 @@ export default function CustomerInformation() {
         <div className="flex items-center gap-2">
           <div className="h-6 w-1.5 rounded bg-[#e30613]" />
           <h2 className="font-display text-2xl font-bold text-white">
-            Customer Information
+            Product Details
           </h2>
         </div>
       </CardHeader>
