@@ -136,7 +136,7 @@ export function Carousel({
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((image, index) => (
-            <div key={index} className="min-w-full h-full flex-shrink-0">
+            <div key={index} className="w-full h-full flex-shrink-0">
               <img
                 src={image || "/placeholder.svg"}
                 alt={captions[index] || `Image ${index + 1}`}

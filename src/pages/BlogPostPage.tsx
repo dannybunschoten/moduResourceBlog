@@ -114,7 +114,7 @@ export default function BlogPostPage() {
             </li>
           </ul>
 
-          <div className="prose prose-lg dark:prose-invert prose-headings:text-moduspec-blue max-w-[100%] prose-img:m-0">
+          <div className="prose prose-lg prose-headings:text-moduspec-blue max-w-[100%] prose-img:m-0">
             {/* Use our structured BlogContent component */}
             {currentPost.sections && (
               <BlogContent sections={currentPost.sections} />
