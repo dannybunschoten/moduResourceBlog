@@ -1,13 +1,13 @@
-import { Routes, Route } from "react-router-dom"
-import { Navbar } from "./components/Navbar"
-import { Footer } from "./components/Footer"
-import HomePage from "./pages/HomePage"
-import AboutPage from "./pages/AboutPage"
-import ContactPage from "./pages/ContactPage"
-import BlogPostPage from "./pages/BlogPostPage"
-import NotFoundPage from "./pages/NotFoundPage"
-import { useEffect } from "react"
-import { useLocation } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import BlogPostPage from "./pages/BlogPostPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function App() {
   const location = useLocation();
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow bg-gray-50">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -28,8 +28,7 @@ function App() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
-
+export default App;
