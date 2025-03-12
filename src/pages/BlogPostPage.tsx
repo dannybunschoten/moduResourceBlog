@@ -139,12 +139,12 @@ export default function BlogPostPage() {
             <Badge variant="outline" className="mb-2 uppercase">
               PREVIOUS
             </Badge>
-            <a
-              href={`/blog/${prevPost.slug}`}
+            <Link
+              to={`/blog/${prevPost.slug}`}
               className="block text-lg font-bold mb-1 hover:text-secondary transition-colors"
             >
               {prevPost.title}
-            </a>
+            </Link>
             <span className="text-sm text-muted-foreground">
               {prevPost.date}
             </span>
@@ -156,12 +156,12 @@ export default function BlogPostPage() {
             <Badge variant="outline" className="mb-2 uppercase">
               NEXT
             </Badge>
-            <a
-              href={`/blog/${nextPost.slug}`}
+            <Link
+              to={`/blog/${nextPost.slug}`}
               className="block text-lg font-bold mb-1 hover:text-secondary transition-colors"
             >
               {nextPost.title}
-            </a>
+            </Link>
             <span className="text-sm text-muted-foreground">
               {nextPost.date}
             </span>

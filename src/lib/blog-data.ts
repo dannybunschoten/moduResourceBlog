@@ -45,7 +45,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 1,
     slug: "corrosion-inspection",
-    title: "Corrosion Assessment Report: Critical Areas Identified",
+    title:
+      "Daily report 1: Corrosion Assessment Report: Critical Areas Identified",
     excerpt:
       "Detailed inspection of structural components revealed significant corrosion patterns requiring immediate attention.",
     author: "Bart Musters",
@@ -189,10 +190,10 @@ export const blogPosts: BlogPost[] = [
   {
     id: 2,
     slug: "electrical-systems",
-    title: "Electrical Systems Compliance Check",
+    title: "Daily Report 2: Electrical Systems Compliance Check",
     excerpt:
       "Comprehensive review of electrical connections and safety systems across the platform.",
-    author: "Bart Musters",
+    author: "Jelle Swanenberg",
     date: "June 11, 2024",
     image: "/download (3).jpeg",
     category: "Rig Intake",
@@ -295,11 +296,10 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
-  // Additional posts with updated structure
   {
     id: 3,
     slug: "equipment-monitoring",
-    title: "CAT Equipment Performance Analysis",
+    title: "Daily Report 3: CAT Equipment Performance Analysis",
     excerpt:
       "Monitoring and analysis of critical equipment parameters and performance metrics.",
     author: "Bart Musters",
@@ -397,7 +397,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 4,
     slug: "safety-systems",
-    title: "Safety Systems Integrity Check",
+    title: "Daily Report 4: Safety Systems Integrity Check",
     excerpt:
       "Evaluation of platform safety systems and emergency response equipment.",
     author: "Bart Musters",
@@ -495,10 +495,10 @@ export const blogPosts: BlogPost[] = [
   {
     id: 5,
     slug: "featured-report",
-    title: "Daily Report: Offshore Platform Inspection",
+    title: "Daily Report 5: Offshore Platform Inspection",
     excerpt:
       "Comprehensive inspection of offshore platform structural integrity and safety systems.",
-    author: "Bart Musters",
+    author: "Bart Musters & Jelle Swanenberg",
     date: "June 14, 2024",
     image: "/download (5).jpeg",
     category: "Rig Intake",

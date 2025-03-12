@@ -8,7 +8,7 @@ export default function HomePage() {
   const latestPosts = blogPosts.slice(0, 4);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
       <section className="py-12">
         <div className="container mx-auto px-4">
           <FeaturedPost />
@@ -41,6 +41,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

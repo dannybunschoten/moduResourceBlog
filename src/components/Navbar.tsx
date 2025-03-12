@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Link } from "react-router-dom"
-import { Menu } from "lucide-react"
-import { Button } from "./ui/button"
-import { cn } from "../lib/utils"
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Menu } from "lucide-react";
+import { Button } from "./ui/button";
+import { cn } from "../lib/utils";
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-100">
@@ -21,7 +21,12 @@ export function Navbar() {
             />
           </Link>
 
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             <Menu className="h-6 w-6" />
             <span className="sr-only">Toggle menu</span>
           </Button>
@@ -30,21 +35,11 @@ export function Navbar() {
           <div className="hidden md:block">
             <ul className="flex space-x-8">
               <li>
-                <Link to="/" className="font-medium text-moduspec-blue hover:text-moduspec-red transition-colors">
-                  Reports
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="font-medium text-moduspec-blue hover:text-moduspec-red transition-colors">
-                  About
-                </Link>
-              </li>
-              <li>
                 <Link
-                  to="/contact"
+                  to="/"
                   className="font-medium text-moduspec-blue hover:text-moduspec-red transition-colors"
                 >
-                  Contact
+                  All Reports
                 </Link>
               </li>
             </ul>
@@ -54,7 +49,7 @@ export function Navbar() {
           <div
             className={cn(
               "absolute top-20 left-0 right-0 bg-white p-6 shadow-md md:hidden transition-all",
-              isOpen ? "block" : "hidden",
+              isOpen ? "block" : "hidden"
             )}
           >
             <ul className="flex flex-col space-y-4">
@@ -67,29 +62,10 @@ export function Navbar() {
                   Reports
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="font-medium text-moduspec-blue hover:text-moduspec-red transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="font-medium text-moduspec-blue hover:text-moduspec-red transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Contact
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-  )
+  );
 }
-

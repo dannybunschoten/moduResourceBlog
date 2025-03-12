@@ -15,7 +15,14 @@ export function FeaturedPost() {
           <div className="mb-6 flex items-center space-x-4">
             <div className="relative h-16 w-16 rounded-full overflow-hidden shadow-md">
               <img
-                src="/inspector.jpg"
+                src="/bart.jpg"
+                alt={featuredPost.author}
+                className="object-cover w-full h-full"
+              />
+            </div>
+            <div className="relative h-16 w-16 rounded-full overflow-hidden shadow-md">
+              <img
+                src="/jelle.jpg"
                 alt={featuredPost.author}
                 className="object-cover w-full h-full"
               />
