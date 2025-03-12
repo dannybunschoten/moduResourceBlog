@@ -1,7 +1,6 @@
 "use client";
 
-import type React from "react";
-
+import { type ReactNode } from "react";
 import {
   Building2,
   Calendar,
@@ -17,7 +16,7 @@ import { cn } from "../lib/utils";
 interface CustomerInfoItem {
   label: string;
   value: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   highlight?: boolean;
 }
 
@@ -25,7 +24,7 @@ export default function CustomerInformation() {
   const customerInfo: CustomerInfoItem[] = [
     {
       label: "Project Name",
-      value: "???",
+      value: "MRAP1136",
       icon: <Briefcase className="h-5 w-5" />,
       highlight: true,
     },
@@ -36,12 +35,12 @@ export default function CustomerInformation() {
     },
     {
       label: "Location",
-      value: "Karamay, Xinjian region",
+      value: "Karamay, Xinjiang region",
       icon: <MapPin className="h-5 w-5" />,
     },
     {
       label: "Rig name",
-      value: "???",
+      value: "KRM-Horizon 8750",
       icon: <Construction className="h-5 w-5" />,
     },
     {
@@ -73,9 +72,9 @@ export default function CustomerInformation() {
       </CardHeader>
       <CardContent className="p-0">
         <div className="divide-y divide-gray-100">
-          {customerInfo.map((item, index) => (
+          {customerInfo.map((item) => (
             <div
-              key={index}
+              key={`customer-info-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
               className={cn(
                 "flex items-start gap-3 p-4 transition-colors",
                 item.highlight ? "bg-[#1f3560]/5" : "hover:bg-gray-50"
@@ -98,8 +97,7 @@ export default function CustomerInformation() {
                 <p
                   className={cn(
                     "mt-1 font-medium",
-                    item.highlight ? "text-[#e30613]" : "text-[#1f3560]",
-                    item.value === "???" ? "italic text-gray-400" : ""
+                    item.highlight ? "text-[#e30613]" : "text-[#1f3560]"
                   )}
                 >
                   {item.value}
