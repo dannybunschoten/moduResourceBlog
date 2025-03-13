@@ -1,9 +1,9 @@
-// Define report content structure types
 export interface ReportSection {
   title: string;
   content: string;
   subsections?: ReportSubsection[];
-  images?: Photo[]; // Added images array to sections
+  images?: Photo[];
+  video?: string;
 }
 
 export interface ReportSubsection {
@@ -11,7 +11,7 @@ export interface ReportSubsection {
   title: string;
   content: string;
   actionItems?: ActionItem[];
-  images?: Photo[]; // Added images array to subsections
+  images?: Photo[];
 }
 
 export interface ActionItem {
@@ -350,6 +350,7 @@ export const blogPosts: BlogPost[] = [
         title: "Discussion",
         content:
           "Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. \n\nThe inspection revealed several critical areas of concern that require immediate and comprehensive attention to prevent further deterioration of essential structural components. Detailed analysis of the mechanical, electrical, and structural systems uncovered significant corrosion patterns that pose potential risks to the overall integrity of the infrastructure. \n\nKey observations include progressive metal degradation in primary support structures, electrical system vulnerabilities, and potential systemic weaknesses that demand urgent remediation strategies. The recommended action items provide a structured approach to addressing these challenges and mitigating potential long-term structural compromise.",
+        video: "/video.mp4",
       },
       {
         title: "Next Steps",
@@ -556,6 +557,8 @@ export const blogPosts: BlogPost[] = [
             alt: "Comprehensive team analysis",
           },
         ],
+
+        video: "/video.mp4",
       },
     ],
   },
@@ -738,6 +741,7 @@ export const blogPosts: BlogPost[] = [
         title: "Discussion",
         content:
           "Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. \n\nThe comprehensive equipment monitoring analysis revealed critical insights into the performance and operational status of CAT equipment. Detailed mechanical assessments and performance testing uncovered several key areas requiring attention and potential optimization. \n\nKey observations include the need for precise sensor calibration, implementation of predictive maintenance strategies, and comprehensive diagnostic evaluations to ensure optimal equipment performance and longevity. The recommended action items provide a strategic approach to addressing these critical equipment monitoring challenges.",
+        video: "/video.mp4",
       },
     ],
   },
@@ -932,6 +936,7 @@ export const blogPosts: BlogPost[] = [
         title: "Discussion",
         content:
           "Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. \n\nThe comprehensive safety systems integrity check revealed critical insights into the current state of emergency preparedness and safety equipment on the platform. Detailed assessments of emergency systems and evacuation routes highlighted several key areas requiring immediate attention and potential improvements. \n\nKey observations include the need for timely replacement of safety equipment, comprehensive functionality testing, and enhanced emergency response team training. The recommended action items provide a strategic approach to addressing these critical safety system challenges and ensuring optimal preparedness for potential emergency scenarios.",
+        video: "/video.mp4",
       },
     ],
   },
@@ -1151,6 +1156,7 @@ export const blogPosts: BlogPost[] = [
         title: "Discussion",
         content:
           "Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. \n\nThe comprehensive offshore platform inspection revealed critical insights into the current state of structural integrity, mechanical systems, and electrical infrastructure. Detailed assessments across multiple domains highlighted several key areas requiring immediate attention and potential improvements. \n\nKey observations include structural vulnerabilities, potential safety system enhancements, and the need for targeted maintenance interventions. The recommended action items provide a strategic approach to addressing these critical platform challenges and ensuring optimal operational safety and performance.",
+        video: "/video.mp4",
       },
       {
         title: "Projected Workscope",

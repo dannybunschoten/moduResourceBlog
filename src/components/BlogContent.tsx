@@ -23,16 +23,6 @@ const ImageCarousel = ({ images }: { images: Photo[] }) => {
 export function BlogContent({ sections }: BlogContentProps) {
   return (
     <>
-      <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-md not-prose">
-        <video
-          className="w-full h-full object-cover"
-          controls
-          preload="metadata"
-        >
-          <source src="/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
       {sections.map((section) => (
         <div key={section.title} className="mb-10 w-full">
           {/* Text content in a narrower container */}
@@ -46,6 +36,18 @@ export function BlogContent({ sections }: BlogContentProps) {
             {section.images && section.images.length > 0 && (
               <div className="my-8">
                 <ImageCarousel images={section.images} />
+              </div>
+            )}
+            {section.video && (
+              <div className="relative w-full max-w-3xl mx-auto aspect-video rounded-lg overflow-hidden shadow-md not-prose">
+                <video
+                  className="w-full h-full object-cover"
+                  controls
+                  preload="metadata"
+                >
+                  <source src={section.video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             )}
           </div>
