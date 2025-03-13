@@ -23,6 +23,16 @@ const ImageCarousel = ({ images }: { images: Photo[] }) => {
 export function BlogContent({ sections }: BlogContentProps) {
   return (
     <>
+      <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-md not-prose">
+        <video
+          className="w-full h-full object-cover"
+          controls
+          preload="metadata"
+        >
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       {sections.map((section) => (
         <div key={section.title} className="mb-10 w-full">
           {/* Text content in a narrower container */}
