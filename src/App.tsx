@@ -12,7 +12,9 @@ import { useLocation } from "react-router-dom";
 function App() {
   const location = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (!location.hash) {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
   }, [location]);
   return (
     <div className="flex flex-col min-h-screen">

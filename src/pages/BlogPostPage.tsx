@@ -13,6 +13,7 @@ import {
   type ReportSection,
 } from "../lib/blog-data";
 import { BlogContent } from "../components/BlogContent";
+import { ChevronRight, List } from "lucide-react";
 
 // Helper function to collect all images from sections and subsections
 const collectAllImages = (sections: ReportSection[]): Photo[] => {
@@ -35,6 +36,58 @@ const collectAllImages = (sections: ReportSection[]): Photo[] => {
   });
 
   return allImages;
+};
+
+const TableOfContents = ({
+  sections,
+  includePhotos = false,
+}: {
+  sections: ReportSection[];
+  includePhotos?: boolean;
+}) => {
+  return (
+    <div className="border border-gray-200 rounded-lg p-6 mb-8 bg-gray-50 max-w-3xl mx-auto">
+      <div className="flex items-center mb-4 gap-3">
+        <List className="text-primary w-8 h-8" />
+        <h2 className="font-bold text-3xl text-primary">Table of contents</h2>
+      </div>
+      <nav>
+        <ul className="space-y-2">
+          {sections.map((section) => (
+            <li key={section.title}>
+              <a
+                className="text-primary hover:text-secondary transition-colors group flex items-center"
+                href={`#${section.title}`}
+              >
+                {section.title}
+                <ChevronRight className="ml-1 h-4 w-4 opacity-0 text-secondary group-hover:opacity-100 transition-opacity" />
+              </a>
+            </li>
+          ))}
+          {includePhotos && (
+            <li>
+              <a
+                className="text-primary hover:text-secondary transition-colors group flex items-center"
+                href="#photos"
+              >
+                Photos
+                <ChevronRight className="ml-1 h-4 w-4 opacity-0 text-secondary group-hover:opacity-100 transition-opacity" />
+              </a>
+            </li>
+          )}
+          <li>
+            <a
+              className="text-primary hover:text-secondary transition-colors group flex items-center"
+              href="#attachments"
+            >
+              Attachments
+              <ChevronRight className="ml-1 h-4 w-4 opacity-0 text-secondary group-hover:opacity-100 transition-opacity" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
 };
 
 export default function BlogPostPage() {
@@ -114,6 +167,11 @@ export default function BlogPostPage() {
             </li>
           </ul>
 
+          <TableOfContents
+            sections={currentPost.sections}
+            includePhotos={allImages.length > 0}
+          />
+
           <div className="prose prose-lg prose-headings:text-moduspec-blue max-w-[100%] prose-img:m-0">
             {/* Use our structured BlogContent component */}
             {currentPost.sections && (
@@ -123,7 +181,9 @@ export default function BlogPostPage() {
 
           {allImages.length > 0 && (
             <div className="mt-10 max-w-3xl mx-auto prose prose-lg prose-img:m-0">
-              <h2 className="text-moduspec-blue">Photos</h2>
+              <h2 className="text-moduspec-blue scroll-mt-24" id="photos">
+                Photos
+              </h2>
               <Carousel
                 images={allImages.map((img) => img.url)}
                 captions={allImages.map((img) => img.caption)}
@@ -132,10 +192,15 @@ export default function BlogPostPage() {
           )}
 
           <div className="mt-10 max-w-3xl mx-auto prose prose-lg prose-img:m-0">
-            <h2 className="text-moduspec-blue mt-10">Attachments</h2>
+            <h2
+              className="text-moduspec-blue mt-10 scroll-mt-24"
+              id="attachments"
+            >
+              Attachments
+            </h2>
             <ol className="list-decimal marker:text-moduspec-blue marker:font-bold">
               {currentPost.attachments.map((attachment) => (
-                <li key={attachment.url} className="mb-2">
+                <li key={attachment.title} className="mb-2">
                   <a
                     key={attachment.url}
                     href={attachment.url}

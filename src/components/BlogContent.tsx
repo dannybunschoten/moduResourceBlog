@@ -27,7 +27,9 @@ export function BlogContent({ sections }: BlogContentProps) {
         <div key={section.title} className="mb-10 w-full">
           {/* Text content in a narrower container */}
           <div className="mx-auto max-w-3xl">
-            <h2 className="mt-10 mb-5">{section.title}</h2>
+            <h2 className="mt-10 mb-5 scroll-mt-24" id={section.title}>
+              {section.title}
+            </h2>
             <p className="mb-6 leading-relaxed whitespace-pre-line">
               {section.content}
             </p>

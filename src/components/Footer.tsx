@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-moduspec-blue text-white py-12">
@@ -18,17 +18,26 @@ export function Footer() {
           <div className="mb-8">
             <ul className="flex flex-wrap justify-center gap-8">
               <li>
-                <Link to="/" className="font-medium hover:text-moduspec-red transition-colors">
+                <Link
+                  to="/"
+                  className="font-medium hover:text-moduspec-red transition-colors"
+                >
                   Reports
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="font-medium hover:text-moduspec-red transition-colors">
+                <Link
+                  to="/about"
+                  className="font-medium hover:text-moduspec-red transition-colors"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="font-medium hover:text-moduspec-red transition-colors">
+                <Link
+                  to="/contact"
+                  className="font-medium hover:text-moduspec-red transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -37,11 +46,16 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 mt-8 pt-8">
+      <div className="pt-8">
         <div className="container mx-auto px-4">
           <p className="text-center text-sm">
             © Copyright {currentYear} - All Rights Reserved by{" "}
-            <a href="https://moduspec.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            <a
+              href="https://moduspec.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
               ModuResources
             </a>{" "}
             Distributed By{" "}
@@ -57,6 +71,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
