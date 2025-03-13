@@ -130,6 +130,24 @@ export default function BlogPostPage() {
               />
             </div>
           )}
+
+          <div className="mt-10 max-w-3xl mx-auto prose prose-lg prose-img:m-0">
+            <h2 className="text-moduspec-blue mt-10">Attachments</h2>
+            <ol className="list-decimal marker:text-moduspec-blue marker:font-bold">
+              {currentPost.attachments.map((attachment) => (
+                <li key={attachment.url} className="mb-2">
+                  <a
+                    key={attachment.url}
+                    href={attachment.url}
+                    className="text-lg text-moduspec-blue hover:text-moduspec-red transition-colors font-bold no-underline"
+                    target="_blank"
+                  >
+                    {attachment.title}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </Card>
 
@@ -141,7 +159,7 @@ export default function BlogPostPage() {
             </Badge>
             <Link
               to={`/blog/${prevPost.slug}`}
-              className="block text-lg font-bold mb-1 hover:text-secondary transition-colors"
+              className="block text-lg font-bold mb-1 hover:text-secondary transition-colors text-moduspec-blue"
             >
               {prevPost.title}
             </Link>
@@ -158,7 +176,7 @@ export default function BlogPostPage() {
             </Badge>
             <Link
               to={`/blog/${nextPost.slug}`}
-              className="block text-lg font-bold mb-1 hover:text-secondary transition-colors"
+              className="block text-lg font-bold mb-1 hover:text-secondary transition-colors text-moduspec-blue"
             >
               {nextPost.title}
             </Link>

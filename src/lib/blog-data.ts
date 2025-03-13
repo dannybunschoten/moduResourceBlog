@@ -21,6 +21,11 @@ export interface ActionItem {
   status: string;
 }
 
+export interface Attachment {
+  title: string;
+  url: string;
+}
+
 export interface BlogPost {
   id: number;
   slug: string;
@@ -31,6 +36,7 @@ export interface BlogPost {
   image: string;
   category: string;
   sections: ReportSection[];
+  attachments: Attachment[];
 }
 
 export interface Photo {
@@ -358,6 +364,24 @@ export const blogPosts: BlogPost[] = [
           "Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. \n\nBased on the comprehensive assessment and detailed recommendations, the following next steps are critical to ensuring structural safety and preventing further degradation. Immediate implementation of the proposed action items will be crucial in maintaining the structural integrity and operational efficiency of the affected systems. \n\nClose collaboration between the Maintenance, Technical, and Safety teams will be essential in executing the proposed interventions with precision and thoroughness.",
       },
     ],
+    attachments: [
+      {
+        title: "Corrosion Assessment Report",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Structural Analysis Summary",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Action Item Checklist",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Next Steps Recommendations",
+        url: "https://www.moduspec.com/contact",
+      },
+    ],
   },
   {
     id: 2,
@@ -561,6 +585,28 @@ export const blogPosts: BlogPost[] = [
         video: "/video.mp4",
       },
     ],
+    attachments: [
+      {
+        title: "Electrical Systems Compliance Report",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Circuit Testing Summary",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Wiring Inspection Checklist",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Action Item Recommendations",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Next Steps Recommendations",
+        url: "https://www.moduspec.com/contact",
+      },
+    ],
   },
   {
     id: 3,
@@ -742,6 +788,28 @@ export const blogPosts: BlogPost[] = [
         content:
           "Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. \n\nThe comprehensive equipment monitoring analysis revealed critical insights into the performance and operational status of CAT equipment. Detailed mechanical assessments and performance testing uncovered several key areas requiring attention and potential optimization. \n\nKey observations include the need for precise sensor calibration, implementation of predictive maintenance strategies, and comprehensive diagnostic evaluations to ensure optimal equipment performance and longevity. The recommended action items provide a strategic approach to addressing these critical equipment monitoring challenges.",
         video: "/video.mp4",
+      },
+    ],
+    attachments: [
+      {
+        title: "Equipment Monitoring Report",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Performance Analysis Summary",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Preventive Maintenance Checklist",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Action Item Recommendations",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Next Steps Recommendations",
+        url: "https://www.moduspec.com/contact",
       },
     ],
   },
@@ -937,6 +1005,28 @@ export const blogPosts: BlogPost[] = [
         content:
           "Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. \n\nThe comprehensive safety systems integrity check revealed critical insights into the current state of emergency preparedness and safety equipment on the platform. Detailed assessments of emergency systems and evacuation routes highlighted several key areas requiring immediate attention and potential improvements. \n\nKey observations include the need for timely replacement of safety equipment, comprehensive functionality testing, and enhanced emergency response team training. The recommended action items provide a strategic approach to addressing these critical safety system challenges and ensuring optimal preparedness for potential emergency scenarios.",
         video: "/video.mp4",
+      },
+    ],
+    attachments: [
+      {
+        title: "Safety Systems Integrity Report",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Emergency Response Checklist",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Evacuation Route Diagram",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Action Item Recommendations",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Next Steps Recommendations",
+        url: "https://www.moduspec.com/contact",
       },
     ],
   },
@@ -1169,15 +1259,35 @@ export const blogPosts: BlogPost[] = [
           "Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. \n\nKey safety observations from the inspection highlight the critical importance of proactive maintenance and continuous system monitoring. Notable concerns include potential structural stress points, electrical system vulnerabilities, and the need for enhanced safety protocols. \n\nRecommendations emphasize the importance of regular inspections, immediate addressing of identified issues, and ongoing training for personnel to ensure maximum safety and operational readiness.",
       },
     ],
+    attachments: [
+      {
+        title: "Offshore Platform Inspection Report",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Structural Integrity Assessment",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Safety Systems Evaluation",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Action Item Recommendations",
+        url: "https://www.moduspec.com/contact",
+      },
+      {
+        title: "Next Steps Recommendations",
+        url: "https://www.moduspec.com/contact",
+      },
+    ],
   },
 ];
 
-// Helper function to get a blog post by slug
 export function getBlogPostBySlug(slug: string) {
   return blogPosts.find((post) => post.slug === slug);
 }
 
-// Helper function to get the previous blog post
 export function getPreviousBlogPost(currentSlug: string) {
   const currentIndex = blogPosts.findIndex((post) => post.slug === currentSlug);
   if (currentIndex > 0) {
@@ -1186,7 +1296,6 @@ export function getPreviousBlogPost(currentSlug: string) {
   return null;
 }
 
-// Helper function to get the next blog post
 export function getNextBlogPost(currentSlug: string) {
   const currentIndex = blogPosts.findIndex((post) => post.slug === currentSlug);
   if (currentIndex !== -1 && currentIndex < blogPosts.length - 1) {
