@@ -1,14 +1,6 @@
 import type { ReportSection, Photo } from "../lib/blog-data";
 import { Carousel } from "../components/ui/carousel";
-import { Badge } from "../components/ui/badge";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "../components/ui/table";
+import { ActionTable } from "./ActionTable";
 
 interface BlogContentProps {
   sections: ReportSection[];
@@ -81,46 +73,10 @@ export function BlogContent({ sections }: BlogContentProps) {
                         <div className="mx-auto max-w-3xl border-l-2 border-gray-100 pl-6 mb-8">
                           <h3>Action Items</h3>
                         </div>
-
-                        {/* Table container - full width up to 1400px */}
-                        <div className="overflow-x-auto border border-gray-200 rounded-lg shadow-sm px-2">
-                          <Table>
-                            <TableHeader>
-                              <TableRow>
-                                <TableHead>ID</TableHead>
-                                <TableHead>Description</TableHead>
-                                <TableHead>Priority</TableHead>
-                                <TableHead>Assignee</TableHead>
-                                <TableHead>Due Date</TableHead>
-                              </TableRow>
-                            </TableHeader>
-                            <TableBody>
-                              {subsection.actionItems.map((item, itemIndex) => (
-                                <TableRow key={itemIndex}>
-                                  <TableCell className="font-medium">
-                                    {item.id}
-                                  </TableCell>
-                                  <TableCell>{item.description}</TableCell>
-                                  <TableCell>
-                                    <Badge
-                                      variant={
-                                        item.priority === "High"
-                                          ? "destructive"
-                                          : item.priority === "Medium"
-                                            ? "secondary"
-                                            : "outline"
-                                      }
-                                    >
-                                      {item.priority}
-                                    </Badge>
-                                  </TableCell>
-                                  <TableCell>{item.assignee}</TableCell>
-                                  <TableCell>{item.dueDate}</TableCell>
-                                </TableRow>
-                              ))}
-                            </TableBody>
-                          </Table>
-                        </div>
+                        <ActionTable
+                          actionItems={subsection.actionItems}
+                          className="not-prose"
+                        />
                       </div>
                     )}
                 </div>
