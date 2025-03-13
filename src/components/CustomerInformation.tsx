@@ -57,16 +57,50 @@ export default function CustomerInformation() {
       label: "Team",
       value: "Bart Musters, Jelle Swanenberg & Peter Wilke",
       icon: <Users className="h-5 w-5" />,
+      highlight: true,
+    },
+    {
+      label: "Surveyor",
+      value: "Bart Musters",
+      icon: (
+        <img
+          src="/bart.jpg"
+          alt="Bart Musters"
+          className="h-8 w-8 rounded-full"
+        />
+      ),
+    },
+    {
+      label: "Surveyor",
+      value: "Jelle Swanenberg",
+      icon: (
+        <img
+          src="/jelle.jpg"
+          alt="Jelle Swanenberg"
+          className="h-8 w-8 rounded-full"
+        />
+      ),
+    },
+    {
+      label: "Techinical Coordinator",
+      value: "Peter Wilke",
+      icon: (
+        <img
+          src="/peter.jpg"
+          alt="Peter Wilke"
+          className="h-8 w-8 rounded-full"
+        />
+      ),
     },
   ];
 
   return (
     <Card className="overflow-hidden border-[#1f3560]/10 shadow-md transition-all duration-300 hover:shadow-lg">
-      <CardHeader className="bg-[#1f3560] pb-4 pt-5">
+      <CardHeader className="bg-moduspec-blue pb-4 pt-5">
         <div className="flex items-center gap-2">
-          <div className="h-6 w-1.5 rounded bg-[#e30613]" />
+          <div className="h-6 w-1.5 rounded bg-moduspec-red" />
           <h2 className="font-display text-2xl font-bold text-white">
-            Product Details
+            Project Details
           </h2>
         </div>
       </CardHeader>
@@ -84,8 +118,8 @@ export default function CustomerInformation() {
                 className={cn(
                   "mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full",
                   item.highlight
-                    ? "bg-[#e30613]/10 text-[#e30613]"
-                    : "bg-[#1f3560]/10 text-[#1f3560]"
+                    ? "bg-moduspec-red/10 text-moduspec-red"
+                    : "bg-[#1f3560]/10 text-moduspec-blue"
                 )}
               >
                 {item.icon}
@@ -97,7 +131,7 @@ export default function CustomerInformation() {
                 <p
                   className={cn(
                     "mt-1 font-medium",
-                    item.highlight ? "text-[#e30613]" : "text-[#1f3560]"
+                    item.highlight ? "text-moduspec-red" : "text-moduspec-blue"
                   )}
                 >
                   {item.value}
