@@ -107,7 +107,7 @@ export default function BlogPostPage() {
               <strong>Surveyor:</strong> {currentPost.author}
             </li>
             <li>
-              <strong>Contributor:</strong> Danny Bunschoten
+              <strong>Contributor:</strong> Peter Wilke
             </li>
             <li>
               <strong>Date:</strong> {currentPost.date}
