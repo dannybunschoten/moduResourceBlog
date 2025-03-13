@@ -123,7 +123,7 @@ export default function BlogPostPage() {
 
           {allImages.length > 0 && (
             <div className="mt-10 max-w-3xl mx-auto prose prose-lg prose-img:m-0">
-              <h2 className="text-moduspec-blue mb-0">Attachments</h2>
+              <h2 className="text-moduspec-blue">Attachments</h2>
               <Carousel
                 images={allImages.map((img) => img.url)}
                 captions={allImages.map((img) => img.caption)}
