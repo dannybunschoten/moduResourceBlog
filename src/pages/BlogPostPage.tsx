@@ -140,21 +140,23 @@ export default function BlogPostPage() {
       <Card className="overflow-hidden">
         <div className="relative h-[300px] md:h-[400px] lg:h-[500px]">
           <img
-            src={currentPost.image || "/placeholder.svg?height=500&width=1200"}
+            src={currentPost.image}
             alt={currentPost.title}
             className="object-cover w-full h-full"
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 opacity-60"></div>
+
+          <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 md:pb-6 text-white">
+            <Badge variant="secondary" className="mb-4">
+              {currentPost.category}
+            </Badge>
+            <h1 className="font-display text-3xl md:text-4xl font-bold mb-4">
+              {currentPost.title}
+            </h1>
+          </div>
         </div>
 
         <div className="p-6 md:p-10">
-          <Badge variant="secondary" className="mb-4">
-            {currentPost.category}
-          </Badge>
-
-          <h1 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
-            {currentPost.title}
-          </h1>
-
           <div className="max-w-3xl mx-auto flex flex-wrap gap-4 mb-8">
             <div className="flex items-center -space-x-3">
               {currentPost.authorImages.map((authorImage) => (
