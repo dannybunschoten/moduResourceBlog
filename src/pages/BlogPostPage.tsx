@@ -155,12 +155,12 @@ export default function BlogPostPage() {
             {currentPost.title}
           </h1>
 
-          <div className="max-w-3xl mx-auto flex flex-wrap gap-6 mb-8">
-            <div className="flex items-center gap-4">
+          <div className="max-w-3xl mx-auto flex flex-wrap gap-4 mb-8">
+            <div className="flex items-center -space-x-3">
               {currentPost.authorImages.map((authorImage) => (
                 <div
                   key={authorImage}
-                  className="relative h-14 w-14 rounded-full overflow-hidden border-2 border-primary shadow-sm"
+                  className="relative h-14 w-14 rounded-full overflow-hidden border-2 border-primary shadow-sm hover:scale-105 transition-transform hover:z-10"
                 >
                   <img
                     src={authorImage}
@@ -168,14 +168,16 @@ export default function BlogPostPage() {
                   />
                 </div>
               ))}
-              <div>
-                <div className="text-sm text-muted-foreground">Surveyor</div>
-                <div className="font-medium">{currentPost.author}</div>
-              </div>
             </div>
 
+            <div>
+              <div className="text-sm text-muted-foreground">Surveyor</div>
+              <div className="font-medium text-primary">
+                {currentPost.author}
+              </div>
+            </div>
             <div className="flex items-center gap-4">
-              <div className="relative h-14 w-14 rounded-full overflow-hidden border-2 border-secondary shadow-sm">
+              <div className="relative h-14 w-14 rounded-full overflow-hidden border-2 border-secondary shadow-sm hover:scale-105 transition-transform hover:z-10">
                 <img
                   src={"/peter.jpg"}
                   className="w-full h-full object-cover"
@@ -183,15 +185,21 @@ export default function BlogPostPage() {
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Contributor</div>
-                <div className="font-medium">{currentPost.contributor}</div>
+                <div className="font-medium text-primary">
+                  {currentPost.contributor}
+                </div>
               </div>
             </div>
 
             <div className="flex items-center gap-4 ml-auto">
-              <CalendarDays className="h-5 w-5 text-muted-foreground" />
+              <div className="relative h-14 w-14 rounded-full overflow-hidden flex items-center justify-center shadow-sm hover:scale-105 transition-transform hover:z-10 bg-gray-100">
+                <CalendarDays className="h-5 w-5 text-muted-foreground" />
+              </div>
               <div>
                 <div className="text-sm text-muted-foreground">Date</div>
-                <div className="font-medium">{currentPost.date}</div>
+                <div className="font-medium text-primary">
+                  {currentPost.date}
+                </div>
               </div>
             </div>
           </div>
