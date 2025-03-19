@@ -32,6 +32,9 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   author: string;
+  authorImages: string[];
+  contributor: string;
+  contributorImages: string[];
   date: string;
   image: string;
   category: string;
@@ -55,6 +58,9 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Detailed inspection of structural components revealed significant corrosion patterns requiring immediate attention.",
     author: "Bart Musters",
+    authorImages: ["/bart.jpg", "/jelle.jpg"],
+    contributor: "Peter Wilke",
+    contributorImages: ["/peter.jpg"],
     date: "June 10, 2024",
     image: "/download (1).jpeg",
     category: "Rig Intake",
@@ -390,6 +396,9 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Comprehensive review of electrical connections and safety systems across the platform.",
     author: "Jelle Swanenberg",
+    authorImages: ["/jelle.jpg"],
+    contributor: "Peter Wilke",
+    contributorImages: ["/peter.jpg"],
     date: "June 11, 2024",
     image: "/download (3).jpeg",
     category: "Rig Intake",
@@ -615,6 +624,9 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Monitoring and analysis of critical equipment parameters and performance metrics.",
     author: "Bart Musters",
+    authorImages: ["/bart.jpg"],
+    contributor: "Jelle Swanenberg",
+    contributorImages: ["/jelle.jpg"],
     date: "June 12, 2024",
     image: "/download (8).jpeg",
     category: "Rig Intake",
@@ -819,7 +831,10 @@ export const blogPosts: BlogPost[] = [
     title: "Daily Report 4: Safety Systems Integrity Check",
     excerpt:
       "Evaluation of platform safety systems and emergency response equipment.",
-    author: "Bart Musters",
+    author: "Peter Wilke",
+    authorImages: ["/peter.jpg"],
+    contributor: "Jelle Swanenberg",
+    contributorImages: ["/jelle.jpg"],
     date: "June 13, 2024",
     image: "/download (4).jpeg",
     category: "Rig Intake",
@@ -1037,6 +1052,9 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Comprehensive inspection of offshore platform structural integrity and safety systems.",
     author: "Bart Musters & Jelle Swanenberg",
+    authorImages: ["/bart.jpg", "/jelle.jpg"],
+    contributor: "Peter Wilke",
+    contributorImages: ["/peter.jpg"],
     date: "June 14, 2024",
     image: "/download (5).jpeg",
     category: "Rig Intake",

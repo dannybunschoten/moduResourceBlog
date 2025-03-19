@@ -13,7 +13,7 @@ import {
   type ReportSection,
 } from "../lib/blog-data";
 import { BlogContent } from "../components/BlogContent";
-import { ChevronRight, List } from "lucide-react";
+import { CalendarDays, ChevronRight, List } from "lucide-react";
 
 // Helper function to collect all images from sections and subsections
 const collectAllImages = (sections: ReportSection[]): Photo[] => {
@@ -138,9 +138,9 @@ export default function BlogPostPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       <Card className="overflow-hidden">
-        <div className="relative h-h-[300px] md:h-[400px] lg:h-[500px]">
+        <div className="relative h-[300px] md:h-[400px] lg:h-[500px]">
           <img
-            src={currentPost.image}
+            src={currentPost.image || "/placeholder.svg?height=500&width=1200"}
             alt={currentPost.title}
             className="object-cover w-full h-full"
           />
@@ -155,17 +155,46 @@ export default function BlogPostPage() {
             {currentPost.title}
           </h1>
 
-          <ul className="flex flex-wrap gap-4 mb-8 text-sm text-muted-foreground">
-            <li>
-              <strong>Surveyor:</strong> {currentPost.author}
-            </li>
-            <li>
-              <strong>Contributor:</strong> Peter Wilke
-            </li>
-            <li>
-              <strong>Date:</strong> {currentPost.date}
-            </li>
-          </ul>
+          <div className="max-w-3xl mx-auto flex flex-wrap gap-6 mb-8">
+            <div className="flex items-center gap-4">
+              {currentPost.authorImages.map((authorImage) => (
+                <div
+                  key={authorImage}
+                  className="relative h-14 w-14 rounded-full overflow-hidden border-2 border-primary shadow-sm"
+                >
+                  <img
+                    src={authorImage}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+              <div>
+                <div className="text-sm text-muted-foreground">Surveyor</div>
+                <div className="font-medium">{currentPost.author}</div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <div className="relative h-14 w-14 rounded-full overflow-hidden border-2 border-secondary shadow-sm">
+                <img
+                  src={"/peter.jpg"}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <div className="text-sm text-muted-foreground">Contributor</div>
+                <div className="font-medium">{currentPost.contributor}</div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 ml-auto">
+              <CalendarDays className="h-5 w-5 text-muted-foreground" />
+              <div>
+                <div className="text-sm text-muted-foreground">Date</div>
+                <div className="font-medium">{currentPost.date}</div>
+              </div>
+            </div>
+          </div>
 
           <TableOfContents
             sections={currentPost.sections}
