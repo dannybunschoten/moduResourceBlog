@@ -21,6 +21,9 @@ import {
   List,
 } from "lucide-react";
 
+const isPdf = (url: string): boolean => {
+  return url.toLowerCase().endsWith(".pdf");
+};
 // Helper function to collect all images from sections and subsections
 const collectAllImages = (sections: ReportSection[]): Photo[] => {
   const allImages: Photo[] = [];
@@ -251,15 +254,11 @@ export default function BlogPostPage() {
                     href={attachment.url}
                     className="text-lg text-moduspec-blue hover:text-moduspec-red transition-colors font-bold no-underline flex items-center gap-2"
                     target="_blank"
-                    download={
-                      attachment.url.toLowerCase().endsWith(".pdf")
-                        ? true
-                        : undefined
-                    }
+                    download={isPdf(attachment.url) ? true : undefined}
                     rel="noopener noreferrer"
                   >
                     {attachment.title}
-                    {attachment.url.toLowerCase().endsWith(".pdf") ? (
+                    {isPdf(attachment.url) ? (
                       <FileDown className="inline h-5 w-5" />
                     ) : (
                       <ExternalLink className="inline w-5 h-5" />
