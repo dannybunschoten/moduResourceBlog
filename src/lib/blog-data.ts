@@ -71,16 +71,21 @@ export const blogPosts: BlogPost[] = [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. \n\nSuspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. \n\nNunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit.",
         images: [
           {
-            url: "/download (1).jpeg",
+            url: "/download (5).jpeg",
             caption:
-              "Comprehensive inspection overview of key structural components",
-            alt: "Detailed inspection overview",
+              "Comprehensive offshore platform structural overview and inspection point mapping",
+            alt: "Detailed platform assessment",
           },
           {
-            url: "/download (2).jpeg",
+            url: "/download (9).jpeg",
+            caption: "Comprehensive electrical systems diagnostic assessment",
+            alt: "Advanced electrical systems evaluation",
+          },
+          {
+            url: "/download (8).jpeg",
             caption:
-              "Extensive close-up analysis of observed corrosion patterns",
-            alt: "In-depth corrosion close-up",
+              "Comprehensive assessment of damaged guardrails and structural vulnerabilities",
+            alt: "Detailed guardrail inspection",
           },
         ],
         subsections: [
@@ -100,10 +105,22 @@ export const blogPosts: BlogPost[] = [
               "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. \n\nEt harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. \n\nTemporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
             images: [
               {
+                url: "/download (4).jpeg",
+                caption:
+                  "Detailed assessment of support structure requiring immediate intervention",
+                alt: "Critical support structure evaluation",
+              },
+              {
                 url: "/download (3).jpeg",
                 caption:
-                  "Comprehensive structural analysis and critical points of concern",
-                alt: "Detailed structural assessment",
+                  "Detailed inspection of control room circuit breaker panel",
+                alt: "Comprehensive circuit breaker assessment",
+              },
+              {
+                url: "/download (4).jpeg",
+                caption:
+                  "Detailed discussion of electrical systems inspection findings",
+                alt: "Comprehensive team analysis",
               },
             ],
           },
@@ -195,10 +212,21 @@ export const blogPosts: BlogPost[] = [
             ],
             images: [
               {
-                url: "/download (4).jpeg",
+                url: "/download (1).jpeg",
                 caption:
-                  "Detailed assessment of support structure requiring immediate intervention",
-                alt: "Critical support structure evaluation",
+                  "Preliminary visual inspection of the platform's exterior structures",
+                alt: "Exterior structural overview",
+              },
+              {
+                url: "/download (2).jpeg",
+                caption: "Close-up evaluation of corrosion on structural beams",
+                alt: "Corrosion damage detail",
+              },
+              {
+                url: "/download (6).jpeg",
+                caption:
+                  "Inspection of lighting and emergency systems compliance",
+                alt: "Emergency systems review",
               },
             ],
           },
@@ -373,7 +401,7 @@ export const blogPosts: BlogPost[] = [
     attachments: [
       {
         title: "Corrosion Assessment Report",
-        url: "https://www.moduspec.com/contact",
+        url: "/World_Wide_Corp_lorem.pdf",
       },
       {
         title: "Structural Analysis Summary",
@@ -385,7 +413,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         title: "Next Steps Recommendations",
-        url: "https://www.moduspec.com/contact",
+        url: "/World_Wide_Corp_lorem.pdf",
       },
     ],
   },
@@ -414,10 +442,21 @@ export const blogPosts: BlogPost[] = [
               "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. \n\nDonec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. \n\nAenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.",
             images: [
               {
-                url: "/download (2).jpeg",
+                url: "/download (1).jpeg",
                 caption:
-                  "Comprehensive circuit testing equipment setup and diagnostic procedure",
-                alt: "Advanced circuit testing",
+                  "Preliminary visual inspection of the platform's exterior structures",
+                alt: "Exterior structural overview",
+              },
+              {
+                url: "/download (2).jpeg",
+                caption: "Close-up evaluation of corrosion on structural beams",
+                alt: "Corrosion damage detail",
+              },
+              {
+                url: "/download (6).jpeg",
+                caption:
+                  "Inspection of lighting and emergency systems compliance",
+                alt: "Emergency systems review",
               },
             ],
           },
@@ -513,10 +552,21 @@ export const blogPosts: BlogPost[] = [
             ],
             images: [
               {
-                url: "/download (3).jpeg",
+                url: "/download (5).jpeg",
                 caption:
-                  "Detailed inspection of control room circuit breaker panel",
-                alt: "Comprehensive circuit breaker assessment",
+                  "Updated overview of offshore platform structural integrity",
+                alt: "Platform integrity review",
+              },
+              {
+                url: "/download (1).jpeg",
+                caption:
+                  "Supplementary inspection of exterior structural features",
+                alt: "Exterior inspection",
+              },
+              {
+                url: "/download (2).jpeg",
+                caption: "Focused review on corrosion areas",
+                alt: "Corrosion focused evaluation",
               },
             ],
           },
@@ -584,10 +634,21 @@ export const blogPosts: BlogPost[] = [
           "Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. \n\nThe comprehensive electrical systems inspection revealed critical insights into the current state of the platform's electrical infrastructure. Detailed analysis of circuit testing, safety systems, and wiring configurations highlighted several key areas requiring immediate attention and potential upgrades. \n\nKey observations include potential vulnerabilities in the circuit breaker systems, degradation of wiring in specific sections, and the need for enhanced safety protocol implementation. The recommended action items provide a strategic approach to addressing these critical electrical system challenges.",
         images: [
           {
-            url: "/download (4).jpeg",
+            url: "/download (3).jpeg",
+            caption: "Critical evaluation of control systems and indicators",
+            alt: "Control systems review",
+          },
+          {
+            url: "/download (8).jpeg",
             caption:
-              "Detailed discussion of electrical systems inspection findings",
-            alt: "Comprehensive team analysis",
+              "Focused inspection on guardrail damage and reinforcement needs",
+            alt: "Guardrail condition analysis",
+          },
+          {
+            url: "/download (9).jpeg",
+            caption:
+              "Comprehensive review of electrical diagnostics and sensor performance",
+            alt: "Electrical diagnostics overview",
           },
         ],
 
@@ -597,7 +658,7 @@ export const blogPosts: BlogPost[] = [
     attachments: [
       {
         title: "Electrical Systems Compliance Report",
-        url: "https://www.moduspec.com/contact",
+        url: "/World_Wide_Corp_lorem.pdf",
       },
       {
         title: "Circuit Testing Summary",
@@ -605,7 +666,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         title: "Wiring Inspection Checklist",
-        url: "https://www.moduspec.com/contact",
+        url: "/World_Wide_Corp_lorem.pdf",
       },
       {
         title: "Action Item Recommendations",
@@ -637,12 +698,24 @@ export const blogPosts: BlogPost[] = [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. \n\nUt in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. \n\nProin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus.",
         images: [
           {
+            url: "/download (3).jpeg",
+            caption: "Critical evaluation of control systems and indicators",
+            alt: "Control systems review",
+          },
+          {
             url: "/download (8).jpeg",
             caption:
-              "Comprehensive equipment monitoring station with advanced diagnostic interfaces",
-            alt: "Advanced monitoring station",
+              "Focused inspection on guardrail damage and reinforcement needs",
+            alt: "Guardrail condition analysis",
+          },
+          {
+            url: "/download (9).jpeg",
+            caption:
+              "Comprehensive review of electrical diagnostics and sensor performance",
+            alt: "Electrical diagnostics overview",
           },
         ],
+
         subsections: [
           {
             title: "Mechanical",
@@ -655,10 +728,21 @@ export const blogPosts: BlogPost[] = [
               "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \n\nNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. \n\nSed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
             images: [
               {
-                url: "/download (9).jpeg",
+                url: "/download (5).jpeg",
                 caption:
-                  "Detailed performance testing procedure with comprehensive data collection",
-                alt: "In-depth performance analysis",
+                  "Updated overview of offshore platform structural integrity",
+                alt: "Platform integrity review",
+              },
+              {
+                url: "/download (1).jpeg",
+                caption:
+                  "Supplementary inspection of exterior structural features",
+                alt: "Exterior inspection",
+              },
+              {
+                url: "/download (2).jpeg",
+                caption: "Focused review on corrosion areas",
+                alt: "Corrosion focused evaluation",
               },
             ],
           },
@@ -805,7 +889,7 @@ export const blogPosts: BlogPost[] = [
     attachments: [
       {
         title: "Equipment Monitoring Report",
-        url: "https://www.moduspec.com/contact",
+        url: "/World_Wide_Corp_lorem.pdf",
       },
       {
         title: "Performance Analysis Summary",
@@ -817,7 +901,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         title: "Action Item Recommendations",
-        url: "https://www.moduspec.com/contact",
+        url: "/World_Wide_Corp_lorem.pdf",
       },
       {
         title: "Next Steps Recommendations",
@@ -850,10 +934,21 @@ export const blogPosts: BlogPost[] = [
               "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. \n\nDonec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. \n\nAenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.",
             images: [
               {
-                url: "/download (3).jpeg",
+                url: "/download (5).jpeg",
                 caption:
-                  "Comprehensive emergency response system diagnostic assessment",
-                alt: "Advanced emergency system evaluation",
+                  "Updated overview of offshore platform structural integrity",
+                alt: "Platform integrity review",
+              },
+              {
+                url: "/download (1).jpeg",
+                caption:
+                  "Supplementary inspection of exterior structural features",
+                alt: "Exterior inspection",
+              },
+              {
+                url: "/download (2).jpeg",
+                caption: "Focused review on corrosion areas",
+                alt: "Corrosion focused evaluation",
               },
             ],
           },
@@ -932,10 +1027,22 @@ export const blogPosts: BlogPost[] = [
             ],
             images: [
               {
-                url: "/download (4).jpeg",
+                url: "/download (3).jpeg",
                 caption:
-                  "Detailed safety equipment inspection and verification process",
-                alt: "Comprehensive safety equipment assessment",
+                  "Critical evaluation of control systems and indicators",
+                alt: "Control systems review",
+              },
+              {
+                url: "/download (8).jpeg",
+                caption:
+                  "Focused inspection on guardrail damage and reinforcement needs",
+                alt: "Guardrail condition analysis",
+              },
+              {
+                url: "/download (9).jpeg",
+                caption:
+                  "Comprehensive review of electrical diagnostics and sensor performance",
+                alt: "Electrical diagnostics overview",
               },
             ],
           },
@@ -1029,7 +1136,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         title: "Emergency Response Checklist",
-        url: "https://www.moduspec.com/contact",
+        url: "/World_Wide_Corp_lorem.pdf",
       },
       {
         title: "Evacuation Route Diagram",
@@ -1041,7 +1148,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         title: "Next Steps Recommendations",
-        url: "https://www.moduspec.com/contact",
+        url: "/World_Wide_Corp_lorem.pdf",
       },
     ],
   },
@@ -1065,12 +1172,24 @@ export const blogPosts: BlogPost[] = [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. \n\nUt in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. \n\nProin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus.",
         images: [
           {
-            url: "/download (5).jpeg",
+            url: "/download (4).jpeg",
             caption:
-              "Comprehensive offshore platform structural overview and inspection point mapping",
-            alt: "Detailed platform assessment",
+              "Intensive analysis of structural support integrity and failure risks",
+            alt: "Support integrity check",
+          },
+          {
+            url: "/download (6).jpeg",
+            caption:
+              "In-depth evaluation of emergency lighting and exit routes",
+            alt: "Emergency lighting analysis",
+          },
+          {
+            url: "/download (7).jpeg",
+            caption: "Safety protocol review in hazardous zones",
+            alt: "Hazard safety evaluation",
           },
         ],
+
         subsections: [
           {
             title: "Mechanical",
@@ -1083,10 +1202,21 @@ export const blogPosts: BlogPost[] = [
               "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \n\nNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. \n\nSed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
             images: [
               {
-                url: "/download (9).jpeg",
+                url: "/download (8).jpeg",
                 caption:
-                  "Comprehensive electrical systems diagnostic assessment",
-                alt: "Advanced electrical systems evaluation",
+                  "Reassessment of guardrail and barrier conditions post-maintenance",
+                alt: "Guardrail post-maintenance review",
+              },
+              {
+                url: "/download (5).jpeg",
+                caption:
+                  "Final verification of platform structural modifications",
+                alt: "Structural modifications review",
+              },
+              {
+                url: "/download (2).jpeg",
+                caption: "Secondary check on beam integrity and wear",
+                alt: "Beam integrity evaluation",
               },
             ],
           },
@@ -1159,10 +1289,21 @@ export const blogPosts: BlogPost[] = [
             ],
             images: [
               {
-                url: "/download (8).jpeg",
+                url: "/download (3).jpeg",
                 caption:
-                  "Comprehensive assessment of damaged guardrails and structural vulnerabilities",
-                alt: "Detailed guardrail inspection",
+                  "In-depth control panel and instrumentation inspection",
+                alt: "Control panel analysis",
+              },
+              {
+                url: "/download (4).jpeg",
+                caption: "Close evaluation of critical support elements",
+                alt: "Critical support review",
+              },
+              {
+                url: "/download (7).jpeg",
+                caption:
+                  "Review of on-site safety implementations and emergency drills",
+                alt: "Safety and emergency review",
               },
             ],
           },
@@ -1284,7 +1425,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         title: "Structural Integrity Assessment",
-        url: "https://www.moduspec.com/contact",
+        url: "/World_Wide_Corp_lorem.pdf",
       },
       {
         title: "Safety Systems Evaluation",
@@ -1296,7 +1437,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         title: "Next Steps Recommendations",
-        url: "https://www.moduspec.com/contact",
+        url: "/World_Wide_Corp_lorem.pdf",
       },
     ],
   },

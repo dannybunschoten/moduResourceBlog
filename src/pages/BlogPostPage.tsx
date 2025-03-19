@@ -13,7 +13,13 @@ import {
   type ReportSection,
 } from "../lib/blog-data";
 import { BlogContent } from "../components/BlogContent";
-import { CalendarDays, ChevronRight, List } from "lucide-react";
+import {
+  CalendarDays,
+  ChevronRight,
+  ExternalLink,
+  FileDown,
+  List,
+} from "lucide-react";
 
 // Helper function to collect all images from sections and subsections
 const collectAllImages = (sections: ReportSection[]): Photo[] => {
@@ -243,10 +249,21 @@ export default function BlogPostPage() {
                   <a
                     key={attachment.url}
                     href={attachment.url}
-                    className="text-lg text-moduspec-blue hover:text-moduspec-red transition-colors font-bold no-underline"
+                    className="text-lg text-moduspec-blue hover:text-moduspec-red transition-colors font-bold no-underline flex items-center gap-2"
                     target="_blank"
+                    download={
+                      attachment.url.toLowerCase().endsWith(".pdf")
+                        ? true
+                        : undefined
+                    }
+                    rel="noopener noreferrer"
                   >
                     {attachment.title}
+                    {attachment.url.toLowerCase().endsWith(".pdf") ? (
+                      <FileDown className="inline h-5 w-5" />
+                    ) : (
+                      <ExternalLink className="inline w-5 h-5" />
+                    )}
                   </a>
                 </li>
               ))}
