@@ -110,17 +110,19 @@ export function Chart({ data }: { data: ActionItem[] }) {
             />
             <ChartTooltip content={<ChartTooltipContent hideLabel />} />
             <ChartLegend content={<ChartLegendContent />} />
-            <Bar
-              dataKey="High"
-              fill="var(--color-High)"
-              radius={[4, 4, 0, 0]}
-            />
+
+            <Bar dataKey="Low" fill="var(--color-Low)" radius={[4, 4, 0, 0]} />
             <Bar
               dataKey="Medium"
               fill="var(--color-Medium)"
               radius={[4, 4, 0, 0]}
             />
-            <Bar dataKey="Low" fill="var(--color-Low)" radius={[4, 4, 0, 0]} />
+
+            <Bar
+              dataKey="High"
+              fill="var(--color-High)"
+              radius={[4, 4, 0, 0]}
+            />
           </BarChart>
         </ChartContainer>
       </CardContent>
