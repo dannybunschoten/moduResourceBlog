@@ -15,7 +15,7 @@ import { cn } from "../lib/utils";
 
 interface CustomerInfoItem {
   label: string;
-  value: string;
+  value?: string;
   icon: ReactNode;
   highlight?: boolean;
 }
@@ -55,7 +55,6 @@ export default function CustomerInformation() {
     },
     {
       label: "Team",
-      value: "Bart Musters, Jelle Swanenberg & Peter Wilke",
       icon: <Users className="h-5 w-5" />,
       highlight: true,
     },
@@ -110,8 +109,9 @@ export default function CustomerInformation() {
             <div
               key={`customer-info-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
               className={cn(
-                "flex items-start gap-3 p-4 transition-colors",
-                item.highlight ? "bg-[#1f3560]/5" : "hover:bg-gray-50"
+                "flex gap-3 p-4 transition-colors",
+                item.highlight ? "bg-[#1f3560]/5" : "hover:bg-gray-50",
+                item.value ? "items-start" : "items-center"
               )}
             >
               <div
@@ -128,14 +128,18 @@ export default function CustomerInformation() {
                 <p className="text-sm font-medium text-gray-500">
                   {item.label}
                 </p>
-                <p
-                  className={cn(
-                    "mt-1 font-medium",
-                    item.highlight ? "text-moduspec-red" : "text-moduspec-blue"
-                  )}
-                >
-                  {item.value}
-                </p>
+                {item.value && (
+                  <p
+                    className={cn(
+                      "mt-1 font-medium",
+                      item.highlight
+                        ? "text-moduspec-red"
+                        : "text-moduspec-blue"
+                    )}
+                  >
+                    {item.value}
+                  </p>
+                )}
               </div>
             </div>
           ))}
