@@ -1,6 +1,7 @@
 import type { ReportSection, Photo } from "../lib/blog-data";
 import { Carousel } from "../components/ui/carousel";
 import { ActionTable } from "./ActionTable";
+import { Chart } from "./Chart";
 
 interface BlogContentProps {
   sections: ReportSection[];
@@ -93,6 +94,10 @@ export function BlogContent({ sections }: BlogContentProps) {
                         />
                       </div>
                     )}
+
+                  {subsection.actionItems && (
+                    <Chart data={subsection.actionItems} />
+                  )}
                 </div>
               ))}
             </div>
