@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import moduspecLogo from "../images/moduSpec.svg";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col items-center">
           <div className="mb-8 relative w-[180px] h-[40px]">
             <img
-              src="/moduSpec.svg"
+              src={moduspecLogo}
               alt="ModuSpec Logo"
               className="object-contain w-full h-full brightness-0 invert"
             />

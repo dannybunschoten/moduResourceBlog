@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { cn } from "../lib/utils";
+import peter from "../images/peter.jpg";
 
 interface CustomerInfoItem {
   label: string;
@@ -84,11 +85,7 @@ export default function CustomerInformation() {
       label: "Techinical Coordinator",
       value: "Peter Wilke",
       icon: (
-        <img
-          src="/peter.jpg"
-          alt="Peter Wilke"
-          className="h-8 w-8 rounded-full"
-        />
+        <img src={peter} alt="Peter Wilke" className="h-8 w-8 rounded-full" />
       ),
     },
   ];

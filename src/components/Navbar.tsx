@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { cn } from "../lib/utils";
+import moduspecLogo from "../images/moduSpec.svg";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="relative w-[180px] h-[40px]">
             <img
-              src="/moduSpec.svg"
+              src={moduspecLogo}
               alt="ModuSpec Logo"
               className="object-contain w-full h-full"
             />
