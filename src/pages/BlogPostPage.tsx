@@ -21,6 +21,8 @@ import {
   List,
 } from "lucide-react";
 
+import peter from "../images/peter.jpg";
+
 const isPdf = (url: string): boolean => {
   return url.toLowerCase().endsWith(".pdf");
 };
@@ -189,10 +191,7 @@ export default function BlogPostPage() {
             </div>
             <div className="flex items-center gap-4">
               <div className="relative h-14 w-14 rounded-full overflow-hidden border-2 border-secondary shadow-sm hover:scale-105 transition-transform hover:z-10">
-                <img
-                  src={"/peter.jpg"}
-                  className="w-full h-full object-cover"
-                />
+                <img src={peter} className="w-full h-full object-cover" />
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Contributor</div>

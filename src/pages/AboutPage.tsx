@@ -1,3 +1,5 @@
+import team from "../images/team.jpg";
+
 export default function AboutPage() {
   return (
     <section className="py-12 md:py-20">
@@ -19,22 +21,8 @@ export default function AboutPage() {
             </p>
 
             <div className="relative mb-16 rounded-lg overflow-hidden">
-              <div className="absolute -top-12 -right-10 z-0">
-                <img
-                  src="/images/about/blob1.svg"
-                  alt="Decorative shape"
-                  className="w-[150px] h-[150px]"
-                />
-              </div>
-              <div className="absolute -bottom-10 -left-16 z-0">
-                <img
-                  src="/images/about/blob2.svg"
-                  alt="Decorative shape"
-                  className="w-[150px] h-[150px]"
-                />
-              </div>
               <img
-                src="team.jpg"
+                src={team}
                 alt="ModuSpec team"
                 className="rounded-lg shadow-xl relative z-10 w-full"
               />

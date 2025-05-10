@@ -13,6 +13,8 @@ import {
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { cn } from "../lib/utils";
 import peter from "../images/peter.jpg";
+import bart from "../images/bart.jpg";
+import jelle from "../images/jelle.jpg";
 
 interface CustomerInfoItem {
   label: string;
@@ -63,11 +65,7 @@ export default function CustomerInformation() {
       label: "Surveyor",
       value: "Bart Musters",
       icon: (
-        <img
-          src="/bart.jpg"
-          alt="Bart Musters"
-          className="h-8 w-8 rounded-full"
-        />
+        <img src={bart} alt="Bart Musters" className="h-8 w-8 rounded-full" />
       ),
     },
     {
@@ -75,7 +73,7 @@ export default function CustomerInformation() {
       value: "Jelle Swanenberg",
       icon: (
         <img
-          src="/jelle.jpg"
+          src={jelle}
           alt="Jelle Swanenberg"
           className="h-8 w-8 rounded-full"
         />
