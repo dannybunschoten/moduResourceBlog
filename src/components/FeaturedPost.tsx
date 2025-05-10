@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { blogPosts } from "../lib/blog-data";
+import bartImage from "../images/bart.jpg";
+import jelleImage from "../images/jelle.jpg";
+import placeHolderImage from "../images/bart.jpg";
 
 export function FeaturedPost() {
   // Use the featured report from our blog data
@@ -15,15 +18,15 @@ export function FeaturedPost() {
           <div className="mb-6 flex items-center space-x-4">
             <div className="relative h-16 w-16 rounded-full overflow-hidden shadow-md">
               <img
-                src="/bart.jpg"
-                alt={featuredPost.author}
+                src={bartImage}
+                alt="Bart"
                 className="object-cover w-full h-full"
               />
             </div>
             <div className="relative h-16 w-16 rounded-full overflow-hidden shadow-md">
               <img
-                src="/jelle.jpg"
-                alt={featuredPost.author}
+                src={jelleImage}
+                alt="Jelle"
                 className="object-cover w-full h-full"
               />
             </div>
@@ -60,7 +63,7 @@ export function FeaturedPost() {
           <Link to={`/blog/${featuredPost.slug}`}>
             <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors z-10" />
             <img
-              src={featuredPost.image || "/placeholder.svg"}
+              src={featuredPost.image || placeHolderImage}
               alt={featuredPost.title}
               className="w-full h-full object-cover"
             />

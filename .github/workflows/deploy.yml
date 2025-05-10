@@ -71,3 +71,20 @@ jobs:
 
           # Set correct ownership & permissions (VERY IMPORTANT)
           ssh $VPS_USER@$VPS_HOST "chown -R www-data:www-data $REMOTE_PATH && chmod -R 755 $REMOTE_PATH"
+  deployv2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Build Results
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+      - name: Deploy To Azure
+        run: |
+          az storage blob upload-batch \
+            --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+            --destination '$web/modu-blog' \
+            --source ./dist \
+            --overwrite
+        env:
+          AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}

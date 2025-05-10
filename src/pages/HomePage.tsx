@@ -21,7 +21,7 @@ export default function HomePage() {
             <div className="lg:col-span-2">
               <div className="mb-8">
                 <h2 className="font-display text-3xl font-bold text-moduspec-blue">
-                  Latest Reports
+                  Latestt Reports
                 </h2>
                 <p className="text-gray-600 mt-2">
                   View our most recent technical inspections and assessments
